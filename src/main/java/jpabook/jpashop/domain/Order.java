@@ -14,7 +14,7 @@ public class Order {
 
     @Column(name = "MEMBER_ID")
     private Long memberId;
-    private LocalDateTime orderDate;
+    private LocalDateTime orderDate; // springboot 설정을 통해 카멜표기법으로 되어있는 것을 관례에 맞추어 변경할 수 있음 ORDER_DATE, order_date
     @Enumerated(EnumType.STRING)
     private OrderStatus status;
 
